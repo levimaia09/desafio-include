@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body, .container-all {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-image: url("../arquivos/60-anos-do-homem-aranha.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%,100%;
+    
+    
+    font-family: 'Averia Sans Libre', cursive;
+    font-family: 'Special Elite', cursive;
+}
+
+
+.container-all {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 2fr 5rem;
+    grid-template-areas: 
+    "h" 
+    "c" 
+    "f";
+}
+
+/* header */
+
+.header-box{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(166, 14, 14);
+    padding: 15px;
+    justify-content: space-between;
+    grid-area: h;
+}
+
+.logo-div{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.text-logo{
+    color: white;
+}
+
+.list-box{
+    width: 25%;
+    height: 100%;
+}
+
+.list-buttons{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-buttons li{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px #800606;
+    background-color: #BB1409;
+    cursor: pointer;
+}
+
+.list-buttons li:hover{
+    margin: 3px 0px 0px 3px;
+    box-shadow: 0px 0px;
+}
+
+.list-buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+ /* conteudo */
+
+.content-box{
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 65, 99, 0.95);
+    margin: 15px 10rem;
+    border-radius: 10px;
+    border: 1px solid rgb(165, 165, 165);
+    grid-area: c;
+    color: white;
+    padding: .8rem;
+    font-size: 25px;
+}
+
+.text-box {
+    display: flex;
+    margin: 30px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-box > img {
+    width: 250px;
+}
+
+/* footer */
+
+.footer-box{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    grid-area: f;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: red;
+    align-items: center;
+    padding: 10px;
+    color: white;
+}
+
+.icons-div {
+    display: flex;
+    width: 15%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons-div > img {
+    width: 50px;
+    height: 50px;
+}
+
